@@ -1,0 +1,9 @@
+.products .product-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+  }
+  
+  .products .product-stars .star-full {
+    fill: var(--primary);
+  }

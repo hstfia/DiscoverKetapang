@@ -11,6 +11,7 @@
 	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
+
 <body id="home">
 	<section class=" header-4 header-sticky">
 		<!--header-->
@@ -37,10 +38,11 @@
 							<li class="nav-item @@about__active">
 								<a class="nav-link" href="about.html">About Us</a>
 							</li>
-							<li class="nav-item @@services__active">
-								<a class="nav-link" href="travel.html">Travel Packages</a>
-							</li>
 							<li class="nav-item active">
+								<a class="nav-link" href="travel.html">Travel Packages<span
+										class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@contact__active">
 								<a class="nav-link" href="contact.html">Contact</a>
 							</li>
 						</ul>
@@ -67,8 +69,6 @@
 		</header>
 		<!--/header-->
 	</section>
-
-
 	<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
 	<!--bootstrap working-->
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -100,95 +100,113 @@
 		});
 	</script>
 
-
 	<!-- breadcrumbs -->
+
 	<section class="inner-banner-main">
-		<div class="about-inner contact">
-			<div class="breadcrumbs-sub">
-				<ul class="breadcrumbs-custom-path">
-					<li class="right-side propClone"><a href="index.html" class="editContent">Home <span
-								class="fa fa-angle-right" aria-hidden="true"></span></a>
-						<p>
-					</li>
-					<li class="active editContent">
-						Contact</li>
-				</ul>
+		<div class="about-inner about editContent">
+			<div class="container">
+				<div class="breadcrumbs-sub">
+					<ul class="breadcrumbs-custom-path">
+						<li class="right-side propClone"><a href="index.html" class="editContent">Home <span
+									class="fa fa-angle-right" aria-hidden="true"></span></a>
+							<p>
+						</li>
+						<li class="active editContent">Travel Packages</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- travel-pack -->
+	<section class="covers-18">
+		<div class="covers-main editContent">
+			<div class="container">
+				<div class="main-titles-head-center ">
+					<h3 class="header-name text-center">Ketapang Destinations
+					</h3> <br>
+				</div>
+				<div class="gallery-image row">
+					<div class="col-lg-4 col-md-6 pb-4">
+						<div class="img-box">
+							<img src="assets/images/cempedak.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="wisata.html">Cempedak Jaya Tourism Village</a></h5>
+							<p class="para">Wisata Cempedak Jaya Village in Kendawangan Kiri Village, Kendawangan
+								District, Ketapang Regency - West Kalimantan is a community-based marine conservation
+								tourism village.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-4 col-md-6 top-top2">
+						<div class="img-box">
+							<img src="assets/images/celincing.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Celincing Tourism Suka Baru Village</a></h5>
+							<p class="para">Celincing Beach is located in Sukabaru Village, Benua Kayong District,
+								Ketapang Regency, West Kalimantan Province. It is currently managed by the Tourism
+								Awareness Group (Pokdarwis).</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sawi.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Sawi Island</a></h5>
+							<p class="para">This tourist spot in West Kalimantan is truly amazing. The beach sand is so
+								beautiful and the marine life is quite diverse.
+								Playing on the beach and snorkeling are activities that you must do when you are on Sawi
+								Island.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/mekar.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Mekar Utama Tourism Village</a></h5>
+							<p class="para">Mekar Utama Tourism Village in Kendawangan District, Ketapang Regency West
+								Kalimantan has quite complete potential ranging from marine tourism to natural mountain
+								tourism With the charm of marine tourism.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sungai.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Tengar River</a></h5>
+							<p class="para">Being one of the tourist destinations that is quite mandatory when you visit
+								Ketapang Regency, the Tengar River. You can go down the Tengar River by using a fishing
+								boat while enjoying the beauty of the riverbank.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sisik.png" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Pantai Sisik</a></h5>
+							<p class="para">
+								Pasir Sisik Kendawangan Beach is located in Ketapang Regency, Indonesia. Pantai Sisik
+								must come to the island to get to Pasir Sisik Kendawangan Beach's rating is 4.3 stars
+								out of 5 stars, based on 7 reviews.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		</div>
 	</section>
 
-	<!-- contact -->
-	<section class="contact-info-main" id="contact">
-
-		<div class="contact-sec	editContent text-right">
-			<div class="container text-auto">
-				<h3 class="sub-title text-center">Contact Us</h3>
-				<br>
-				<div class="map-content-9 mb-5 ">
-					<form action="//sendmail.w3layouts.com/submitForm" method="post">
-						<div class="twice-two">
-							<input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name"
-								required="">
-							<input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
-								required="">
-							<input type="text" class="form-control" name="w3lSubject" id="w3lSubject"
-								placeholder="Subject" required="">
-						</div>
-						<textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
-							required=""></textarea>
-
-						<div class="text-right">
-							<button type="submit" class="btn btn-contact">Send Message</button>
-						</div>
-					</form>
-				</div>
-
-
-				<div class="d-grid contact-view">
-					<div class="cont-details text-auto">
-						<p class="para mt-3 mb-4 text-left">Ketapang Regency is a level II region located in West
-							Kalimantan province. The capital is Delta Pawan District or what is known as Ketapang City,
-							a city located in the Pawan River Delta.</p>
-						<br>
-						<div class="cont-top">
-							<div class="cont-left text-auto">
-								<span class="fa fa-phone text-secondary"></span>
-							</div>
-							<div class="cont-right">
-								<p class="para"><a href="tel:+62 81234567890">+62 81234567890</a></p>
-							</div>
-						</div>
-						<div class="cont-top margin-up">
-							<div class="cont-left text-auto">
-								<span class="fa fa-envelope-o text-secondary"></span>
-							</div>
-							<div class="cont-right">
-								<p class="para"><a href="mailto:discoverketapang@gmail.com"
-										class="mail">discoverketapang@gmail.com</a></p>
-							</div>
-						</div>
-						<div class="cont-top margin-up">
-							<div class="cont-left text-auto">
-								<span class="fa fa-map-marker text-secondary"></span>
-							</div>
-							<div class="cont-right">
-								<p class="para">Ketapang, Kalimantan Barat</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="map-iframe ">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2041906.8800791162!2d109.26505968824252!3d-1.6819290748192197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e044cf6da61153f%3A0x201126c1f8e4178!2sKetapang%20Regency%2C%20West%20Kalimantan!5e0!3m2!1sen!2sid!4v1696937598079!5m2!1sen!2sid"
-							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
 
 	<!-- footer -->
 	<section class="footer-29-main">
@@ -223,6 +241,8 @@
 					<p class="copy-footer-29" style="text-align: center; color: white;">© 2023 Discover Ketapang</p>
 				</div>
 	</section>
+
+
 	<!-- move top -->
 	<button onclick="topFunction()" id="movetop" title="Go to top">
 		<span class="fa fa-chevron-up"></span>

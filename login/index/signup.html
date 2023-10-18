@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp</title>
+  <link rel="stylesheet" href="../css/signup.css" />
+</head>
+
+<body>
+  <div class="split-screen">
+    <div class="left">
+      <section class="copy"></section>
+    </div>
+    <div class="right">
+      <form action="/index-login.html">
+        <section class="copy">
+          <h2>Hi, Get Started Now</h2>
+          <h3>Enter details to create your account</h3>
+        </section>
+        <div class="input-container name">
+          <label for="fname">Full Name</label>
+          <input id="fname" name="fname" placeholder="yourname" type="text" />
+        </div>
+        <div class="input-container email">
+          <label for="email">Email</label>
+          <input id="email" name="email" placeholder="youremail@gmail.com" type="email" />
+        </div>
+        <div class="input-container email">
+          <label for="email">Phone Number</label>
+          <input id="email" name="phone-number" placeholder="+62 | 8xxxx" type="email" />
+        </div>
+        <div class="input-container password">
+          <label for="password">Password</label>
+          <input id="password" name="password" placeholder="must be at least 6 characters" type="password" />
+          <i class="far fa-eye-slash"></i>
+        </div>
+        <div class="input-container password">
+          <label for="password">Confirm Password</label>
+          <input id="password" name="confirm-password" placeholder="retype your password" type="password" />
+          <i class="far fa-eye-slash"></i>
+        </div>
+
+        <a href="/index-login.html" button class="sign-btn" type="submit">Sign Up</a></button>
+        <div class="login-container">
+          <p>
+            Already Have An Account?
+            <a href="/login/index/login.html"> <strong>Log In</strong></a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
