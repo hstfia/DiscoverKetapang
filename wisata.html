@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Discover Ketapang</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="home">
+	<section class=" header-4 header-sticky">
+		<!--header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark stroke">
+					<a class="navbar-brand" href="#index.html">
+						<img src="assets/images/LogoRevLight.png" alt="Your logo" title="Your logo"
+							style="width:100px" />
+					</a>
+					<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-lg-5">
+							<li class="nav-item @@home__active">
+								<a class="nav-link" href="index.html">Home </a>
+							</li>
+							<li class="nav-item @@about__active">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="travel.html">Travel Packages<span
+										class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@contact__active">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<div class="search-right">
+
+							</div>
+
+							<!-- login-->
+							<ul class="navbar-nav ml-lg-5" style="margin-left: auto;">
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/signup.html">Sign Up<span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/login.html">Login <span
+											class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+							<!-- //login-->
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/header-->
+	</section>
+	<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+	<!--bootstrap working-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--bootstrap working//-->
+	<!--/MENU-JS-->
+	<script>
+		//Main navigation Active Class Add Remove
+		$(".navbar-toggler").on("click", function () {
+			$("header").toggleClass("active");
+		});
+		$(document).on("ready", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+			$(window).on("resize", function () {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+			});
+		});
+	</script>
+	<!--//MENU-JS-->
+	<!-- disable body scroll which navbar is in active -->
+	<script>
+		$(function () {
+			$('.navbar-toggler').click(function () {
+				$('body').toggleClass('noscroll');
+			})
+		});
+	</script>
+	<!-- disable body scroll which navbar is in active -->
+	<!--theme switcher dark and light mode script-->
+	<script>
+		const bodyElement = document.querySelector('body');
+		const themeToggle = document.querySelector('#themeToggle');
+		const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+
+		const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+
+		if (currentTheme) {
+			bodyElement.classList.add(currentTheme);
+
+			if (currentTheme === 'dark') {
+				themeToggle.checked = true;
+			}
+		}
+
+		function userPreference(e) {
+			if (e.matches) {
+				bodyElement.classList.add("dark");
+				return "dark"
+			} else {
+				bodyElement.classList.remove("dark");
+				return ""
+			}
+		}
+
+		darkModeMql.addListener(userPreference);
+
+		function themeSwitcher(e) {
+			if (e.target.checked) {
+				bodyElement.classList.add('dark');
+				localStorage.setItem('theme', 'dark');
+			} else {
+				bodyElement.classList.remove('dark');
+				localStorage.setItem('theme', '');
+			}
+		}
+
+		themeToggle.addEventListener('change', themeSwitcher);
+	</script>
+	<!--theme switcher dark and light mode script//-->
+
+
+
+	<!-- breadcrumbs -->
+	<section class="inner-banner-main">
+		<div class="about-inner about editContent">
+			<div class="container">
+				<div class="breadcrumbs-sub">
+					<ul class="breadcrumbs-custom-path">
+						<li class="right-side propClone"><a href="index.html" class="editContent">Home <span
+									class="fa fa-angle-right" aria-hidden="true"></span></a>
+							<p>
+						</li>
+						<li class="active editContent">Travel Packages</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="recent-work">
+		<div class="jst-two-col">
+			<!-- <p style="margin-left: 1000px; margin-top: 70px;">Other Destinations</p> -->
+			<div class="" style="position: absolute; margin-left: 60px;">
+				<input type="date">
+				<div>
+					<div style="margin: -29px; margin-left: 25px;">
+						<button id="dropdownButton" class="btn btn-green" data-bs-toggle="dropdown"
+							aria-expanded="false" style="position: absolute; margin-left: 150px; width: 70%; ">
+							Person
+							<ul class="dropdown-menu dropdown-menu">
+								<li><a class="dropdown-item" onclick="changeButtonText('1 Person')" href="#">1
+										Person</a></li>
+								<li><a class="dropdown-item" onclick="changeButtonText('2-4 Person')" href="#">2-4
+										Person</a></li>
+								<li><a class="dropdown-item" onclick="changeButtonText('5-10 Person')" href="#">5-10
+										Person</a></li>
+							</ul>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div></div>
+			<div class="container-fuild">
+				<a href="./login/index/login.html" class="btn col-md-8 col-sm-6 col-xl-2 "
+					style="margin-left: 365px; margin-bottom:40px; background-color: #28a745;">
+					<p class="p" style="color: white;">Booking Now</p>
+				</a>
+				<div>
+
+				</div>
+				<div class="row">
+					<div class=" ml-5 ps-3 col-md-8 col-sm-12 col-xl-8 ">
+						<div class="image">
+							<img src="assets/images/cempedak1.png" width="100%">
+							<hr>
+						</div>
+						<div class="description ">
+							<h1>Cempedak Jaya Tourism Village</h1>
+							<span class="fa-solid fa-location-dot">Ketapang, Kalimantan Barat</span>
+							<hr>
+							<p>Cempedak Jaya Tourism Village in Kendawangan Kiri Village, Kendawangan District,
+								Ketapang Regency West Kalimantan is a community-based marine conservation tourism
+								village. Every month in 2022, the island is visited by sailing ships from various
+								countries to rest, enjoy the culinary specialties of Cempedak Island, and shop for
+								supplies. In addition, there are also many Indonesian tourists from Central
+								Kalimantan who visit by sea to enjoy culinary offerings and conservation adventures
+								on the island, which is now also one of the leading destinations in Ketapang
+								Regency. <br>
+								Cempedak Jaya tourist village offers a 100-beach adventure as its main attraction. A
+								dugong and seagrass conservation tourism program, where tourists are invited to
+								participate in patrolling the marine area around Cempedak and Bawal islands, which
+								are thought to be dugong habitats.</p> <br>
+
+							<div class="row">
+								<div class="col-md-6" style="margin-left: -20px;">
+									<img src="assets/images/w1.png" style="margin: 20px;">
+								</div>
+								<div class="col-md-6 mt-3">
+									<img src="assets/images/w2.png" alt="">
+								</div>
+							</div> <br>
+							<p>For the efforts of Pokdarwis Cempedak Jaya in dugong and seagrass conservation
+								efforts packaged in a marine ecotourism program, this group received the 1st runner
+								up Local Hero award at the 2021 International Ocean Award event organized by BOAT
+								International and the Blue Marine Foundation in the UK. In 2022, Cempedak Island was
+								also designated as one of the Nusantara Maritime Villages by LANAL Ketapang and is
+								one of the stopover points for international sailing ships.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-2 col-xl-3 pb-2">
+						<div class="card" style="border-radius: 1rem; border: none; padding-bottom: 4cqb;">
+							<div class="card-body shadow" style="border-radius: 1rem;">
+								<img class="card-img-top mb-4" src="assets/images/celincing.jpg" alt="Card image cap">
+								<span> <b>Celincing Suka Baru Village</b></span> <br>
+								<a href="#" class="btn btn-success" type="button"> View More</a>
+							</div>
+						</div>
+						<div class="card" style="border-radius: 1rem; border: none; padding-bottom: 4cqb;">
+							<div class="card-body shadow" style="border-radius: 1rem;">
+								<img class="card-img-top mb-4" src="assets/images/sawi.jpg" alt="Card image cap">
+								<span> <b>Sawi Island</b></span> <br>
+								<a href="#" class="btn btn-success" type="button"> View More</a>
+							</div>
+						</div>
+						<div class="card" style="border-radius: 1rem; border: none; padding-bottom: 4cqb;">
+							<div class="card-body shadow" style="border-radius: 1rem;">
+								<img class="card-img-top mb-4" src="assets/images/mekar.jpg" alt="Card image cap">
+								<span> <b>Mekar Utama Tourism Village</b></span> <br>
+								<a href="#" class="btn btn-success" type="button"> View More</a>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="div" style="margin-left: 50px;">
+						<hr class="style" style="background-color: black; width: 800px;">
+						<h3 class="scgedul" style="margin-right: 5rem;">Schedule</h2>
+							<hr class="style" style="background-color: black; width: 800px;">
+							<p>Monday - Sunday </p>
+							08:20 - 10:00 <br>
+							10:15 - 11:55 <br>
+							12:55 - 14:35 <br>
+							14:55 - 16:35</p>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+	<!-- move top -->
+	<button onclick="topFunction()" id="movetop" title="Go to top">
+		<span class="fa fa-chevron-up"></span>
+	</button>
+	<script>
+		function changeButtonText(newText) {
+			document.getElementById('dropdownButton').innerHTML = newText;
+		}
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("movetop").style.display = "block";
+			} else {
+				document.getElementById("movetop").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+	</script>
+	<!-- footer -->
+	<section class="footer-29-main">
+		<div class="footer-29 py-5 ">
+			<div class="container">
+				<div class="grid-col-4 footer-top-29">
+					<div class="footer-list-29 footer-1"
+						style="width: 23rem; color: #ecf0f1; font-size: 19px; font-weight: 300;">
+						<h2 class="footer-title-29">Discover Ketapang</h2>
+						<p>We are a team called Discover Ketapang. The aim of this team was formed to solve problems
+							experienced by users regarding water transportation tickets for traveling</p>
+						<div class="main-social-footer-29">
+							<a href="#facebook" class="facebook"><span class="fas fa-facebook></span></a>
+						<a href=" #twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+							<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+							<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+							<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+						</div>
+					</div>
+					<div class="footer-list-29 footer-2 d-flex flex-row-reverse"
+						style="width: 35rem; color: #ecf0f1; font-size: 19px; font-weight: 300; margin-left: 22%;">
+						<ul>
+							<h6 class="footer-title-29">Contact</h6>
+							<li>Address: Ketapang, Kalimantan Barat</li>
+							<li>Phone: +62 81234567890</li>
+							<li>Email: discoverketapang@gmail.com</li>
+							<li>Maps: Ketapang, Kalimantan Barat</li>
+						</ul>
+					</div>
+				</div> <br>
+				<div class=" bottom-copies">
+					<p class="copy-footer-29" style="text-align: center; color: white;">© 2023 Discover Ketapang</p>
+				</div>
+	</section>
+
+</body>
+
+</html>

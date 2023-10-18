@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Discover Ketapang</title>
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="home">
+	<section class=" header-4 header-sticky">
+		<!--header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark stroke">
+					<a class="navbar-brand" href="#index.html">
+						<img src="assets/images/LogoRevLight.png" alt="Your logo" title="Your logo"
+							style="width:100px" />
+					</a>
+					<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-lg-5">
+							<li class="nav-item @@home__aactive">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="about.html">About Us<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@services__active">
+								<a class="nav-link" href="travel.html">Travel Packages</a>
+							</li>
+							<li class="nav-item @@contact__active">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<div class="search-right">
+
+							</div>
+
+							<!-- login-->
+							<ul class="navbar-nav ml-lg-5" style="margin-left: auto;">
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/signup.html">Sign Up<span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/login.html">Login <span
+											class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+							<!-- //login-->
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/header-->
+	</section>
+	<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+	<!--bootstrap working-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--bootstrap working//-->
+	<!--/MENU-JS-->
+	<script>
+		//Main navigation Active Class Add Remove
+		$(".navbar-toggler").on("click", function () {
+			$("header").toggleClass("active");
+		});
+		$(document).on("ready", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+			$(window).on("resize", function () {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+			});
+		});
+	</script>
+	<!--//MENU-JS-->
+	<!-- disable body scroll which navbar is in active -->
+	<script>
+		$(function () {
+			$('.navbar-toggler').click(function () {
+				$('body').toggleClass('noscroll');
+			})
+		});
+	</script>
+
+	<!-- breadcrumbs -->
+
+	<section class="inner-banner-main">
+		<div class="about-inner about editContent">
+			<div class="container">
+				<div class="breadcrumbs-sub">
+					<ul class="breadcrumbs-custom-path">
+						<li class="right-side propClone"><a href="index.html" class="editContent">Home <span
+									class="fa fa-angle-right" aria-hidden="true"></span></a>
+							<p>
+						</li>
+						<li class="active editContent">About Us</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="teams-15">
+		<div class="team-single-main editContent">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-4 col-md-6 col-sm-6 column">
+						<img src="assets/images/b1.png" alt="product" class="img-responsive ">
+						<br2>
+							<h4>Best price guarantee</h4> <br>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6>Enjoy our services with confidence, thanks to our Best Price Guarantee, ensuring
+										you get the most affordable rates for your travel needs.</h6>
+								</div>
+								<div class="clear"></div>
+							</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 column">
+						<img src="assets/images/b2.png" alt="product" class="img-responsive "> <br>
+						<h4>Easy Booking </h4> <br>
+						<div class="team-7_bottom">
+							<div class="team-7_bottom-left">
+								<h6>Experience hassle-free travel planning with an easy room booking process, designed
+									to make your trip stress-free and comfortable.</h6>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 column">
+						<img src="assets/images/b3.png" alt="product" class="img-responsive "> <br>
+						<h4>Customer Service 24h</h4> <br>
+						<div class="team-7_bottom">
+							<div class="team-7_bottom-left">
+								<h6>Our dedicated customer service is always ready to assist you, ensuring 24-hour
+									support and assistance throughout your journey.</h6>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<!-- breadcrumbs //-->
+	<section class="recent-work">
+		<div class="jst-two-col">
+			<div class="container">
+				<div class="row">
+					<div class="my-bio cwp4-text col-lg-6">
+						<h1>
+							About Discover Ketapang
+						</h1>
+						<p class="para mt-3 mb-lg-4 ">We are a team called Discover Ketapang. The purpose of this team
+							is formed to solve problems experienced by users.
+							To deal with this problem we created a travel website for users who
+							have services regarding travel,
+							The website we create also focuses on
+							tourist services especially on water transport tickets</p>
+						<!-- <a href="about.html" class="action-button btn mt-4">Read more <span class="fa fa-angle-double-right"></span></a> -->
+					</div>
+					<div class="col-lg-6 ">
+						<img src="assets/images/about1.png" alt="product" class="img-responsive about-me">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- /team-grids -->
+	<section class="team-main-6" id="team">
+		<div class="team-content-page editContent ">
+
+			<div class="container center">
+				<h1>Our Teams</h1>
+				<h5>Discover Ketapang</h2> <br>
+					<div class="row text-center">
+						<div class=" col-lg-4 col-md-6 top-top2">
+							<a href="#url"><img class="img img-responsive" src="assets/images/apri.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a href="#url">M. Aprialdi Lubis</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hustler</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#"><span class="fa fa-instagram"></span></a>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<hr>
+
+						<div class=" col-lg-4 col-md-6 top-top2">
+							<a href="#url"><img class="img img-responsive" src="assets/images/iksan.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a href="#url">Iksan Syamsul Hadi
+								</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hacker</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#twitter"><span
+												class="fa fa-instagram"></span></a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div class=" col-lg-4 col-md-6 top-top2 pd-5">
+							<a href="#url"><img class="img img-responsive" src="assets/images/hawa.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a href="https://instagram.com/hawastfia">Hawa Stefi Ananda
+								</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hacker</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#twitter"><span
+												class="fa fa-instagram"></span></a></li>
+								</ul> <br>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div class=" col-lg-4 col-md-6 top-top2">
+							<a href="#url"><img class="img img-responsive" src="assets/images/ulil.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a
+									href=" https://instagram.com/hngtthe_?igshid=OGQ5ZDc2ODk2ZA==">Ahmad Ulil Absor
+								</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hipster</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#twitter"><span
+												class="fa fa-instagram"></span></a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class=" col-lg-4 col-md-6 top-top2">
+							<a href="#url"><img class="img img-responsive" src="assets/images/tykea.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a
+									href="https://instagram.com/tfarrazz?igshid=NzZlODBkYWE4Ng==">Tykea Farraz Zafira
+								</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hipster</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#twitter"><span
+												class="fa fa-instagram"></span></a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class=" col-lg-4 col-md-6 top-top2">
+							<a href="#url"><img class="img img-responsive" src="assets/images/vincent.png" alt=""></a>
+							<h4 style="margin-right: 45px"><a
+									href="https://instagram.com/vincentso__?igshid=OGQ5ZDc2ODk2ZA==">Vincent So
+								</a></h4>
+							<div class="team-7_bottom">
+								<div class="team-7_bottom-left">
+									<h6 style="margin-right: 45px">Hipster</h6>
+								</div>
+								<ul class="social_7">
+									<li style="margin-right: 45px"><a href="#twitter"><span
+												class="fa fa-instagram"></span></a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- /team-grids -->
+
+
+
+	</section>
+
+	<!-- footer -->
+	<!-- footer -->
+	<section class="footer-29-main">
+		<div class="footer-29 py-5 ">
+			<div class="container">
+				<div class="grid-col-4 footer-top-29">
+					<div class="footer-list-29 footer-1"
+						style="width: 23rem; color: #ecf0f1; font-size: 19px; font-weight: 300;">
+						<h2 class="footer-title-29">Discover Ketapang</h2>
+						<p>We are a team called Discover Ketapang. The aim of this team was formed to solve problems
+							experienced by users regarding water transportation tickets for traveling</p>
+						<div class="main-social-footer-29">
+							<a href="#facebook" class="facebook"><span class="fas fa-facebook></span></a>
+						<a href=" #twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+							<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+							<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+							<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+						</div>
+					</div>
+					<div class="footer-list-29 footer-2 d-flex flex-row-reverse"
+						style="width: 35rem; color: #ecf0f1; font-size: 19px; font-weight: 300; margin-left: 22%;">
+						<ul>
+							<h6 class="footer-title-29">Contact</h6>
+							<li>Address: Ketapang, Kalimantan Barat</li>
+							<li>Phone: +62 81234567890</li>
+							<li>Email: discoverketapang@gmail.com</li>
+							<li>Maps: Ketapang, Kalimantan Barat</li>
+						</ul>
+					</div>
+				</div> <br>
+				<div class=" bottom-copies">
+					<p class="copy-footer-29" style="text-align: center; color: white;">© 2023 Discover Ketapang</p>
+				</div>
+	</section>
+
+	<!-- move top -->
+	<button onclick="topFunction()" id="movetop" title="Go to top">
+		<span class="fa fa-chevron-up"></span>
+	</button>
+	<script>
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("movetop").style.display = "block";
+			} else {
+				document.getElementById("movetop").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<!-- /move top -->
+
+</body>
+
+</html>

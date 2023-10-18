@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Discover Ketapang</title>
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="home">
+	<section class=" header-4 header-sticky">
+		<!--header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark stroke">
+					<a class="navbar-brand" href="#index.html">
+						<img src="assets/images/LogoRevLight.png" alt="Your logo" title="Your logo"
+							style="width:100px" />
+					</a>
+					<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav ml-lg-5">
+							<li class="nav-item @@home__active">
+								<a class="nav-link" href="index.html">Home </a>
+							</li>
+							<li class="nav-item @@about__active">
+								<a class="nav-link" href="about.html">About Us</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="travel.html">Travel Packages<span
+										class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@contact__active">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<div class="search-right">
+
+							</div>
+
+							<!-- login-->
+							<ul class="navbar-nav ml-lg-5" style="margin-left: auto;">
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/signup.html">Sign Up<span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="./login/index/login.html">Login <span
+											class="sr-only">(current)</span></a>
+								</li>
+							</ul>
+							<!-- //login-->
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/header-->
+	</section>
+	<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+	<!--bootstrap working-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--bootstrap working//-->
+	<!--/MENU-JS-->
+	<script>
+		//Main navigation Active Class Add Remove
+		$(".navbar-toggler").on("click", function () {
+			$("header").toggleClass("active");
+		});
+		$(document).on("ready", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+			$(window).on("resize", function () {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+			});
+		});
+	</script>
+	<!--//MENU-JS-->
+	<!-- disable body scroll which navbar is in active -->
+	<script>
+		$(function () {
+			$('.navbar-toggler').click(function () {
+				$('body').toggleClass('noscroll');
+			})
+		});
+	</script>
+
+	<!-- breadcrumbs -->
+
+	<section class="inner-banner-main">
+		<div class="about-inner about editContent">
+			<div class="container">
+				<div class="breadcrumbs-sub">
+					<ul class="breadcrumbs-custom-path">
+						<li class="right-side propClone"><a href="index.html" class="editContent">Home <span
+									class="fa fa-angle-right" aria-hidden="true"></span></a>
+							<p>
+						</li>
+						<li class="active editContent">Travel Packages</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- travel-pack -->
+	<section class="covers-18">
+		<div class="covers-main editContent">
+			<div class="container">
+				<div class="main-titles-head-center ">
+					<h3 class="header-name text-center">Ketapang Destinations
+					</h3> <br>
+				</div>
+				<div class="gallery-image row">
+					<div class="col-lg-4 col-md-6 pb-4">
+						<div class="img-box">
+							<img src="assets/images/cempedak.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="wisata.html">Cempedak Jaya Tourism Village</a></h5>
+							<p class="para">Wisata Cempedak Jaya Village in Kendawangan Kiri Village, Kendawangan
+								District, Ketapang Regency - West Kalimantan is a community-based marine conservation
+								tourism village.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-4 col-md-6 top-top2">
+						<div class="img-box">
+							<img src="assets/images/celincing.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Celincing Tourism Suka Baru Village</a></h5>
+							<p class="para">Celincing Beach is located in Sukabaru Village, Benua Kayong District,
+								Ketapang Regency, West Kalimantan Province. It is currently managed by the Tourism
+								Awareness Group (Pokdarwis).</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sawi.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Sawi Island</a></h5>
+							<p class="para">This tourist spot in West Kalimantan is truly amazing. The beach sand is so
+								beautiful and the marine life is quite diverse.
+								Playing on the beach and snorkeling are activities that you must do when you are on Sawi
+								Island.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/mekar.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Mekar Utama Tourism Village</a></h5>
+							<p class="para">Mekar Utama Tourism Village in Kendawangan District, Ketapang Regency West
+								Kalimantan has quite complete potential ranging from marine tourism to natural mountain
+								tourism With the charm of marine tourism.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sungai.jpg" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Tengar River</a></h5>
+							<p class="para">Being one of the tourist destinations that is quite mandatory when you visit
+								Ketapang Regency, the Tengar River. You can go down the Tengar River by using a fishing
+								boat while enjoying the beauty of the riverbank.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 top-top">
+						<div class="img-box">
+							<img src="assets/images/sisik.png" alt="product" class="img-responsive ">
+							<h5 class="my-2"><a href="about.html">Pantai Sisik</a></h5>
+							<p class="para">
+								Pasir Sisik Kendawangan Beach is located in Ketapang Regency, Indonesia. Pantai Sisik
+								must come to the island to get to Pasir Sisik Kendawangan Beach's rating is 4.3 stars
+								out of 5 stars, based on 7 reviews.</p>
+							<div class="top-gap">
+								<a href="wisata.html"> Read Full Post</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+	<!-- footer -->
+	<section class="footer-29-main">
+		<div class="footer-29 py-5 ">
+			<div class="container">
+				<div class="grid-col-4 footer-top-29">
+					<div class="footer-list-29 footer-1"
+						style="width: 23rem; color: #ecf0f1; font-size: 19px; font-weight: 300;">
+						<h2 class="footer-title-29">Discover Ketapang</h2>
+						<p>We are a team called Discover Ketapang. The aim of this team was formed to solve problems
+							experienced by users regarding water transportation tickets for traveling</p>
+						<div class="main-social-footer-29">
+							<a href="#facebook" class="facebook"><span class="fas fa-facebook></span></a>
+						<a href=" #twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+							<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+							<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+							<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+						</div>
+					</div>
+					<div class="footer-list-29 footer-2 d-flex flex-row-reverse"
+						style="width: 35rem; color: #ecf0f1; font-size: 19px; font-weight: 300; margin-left: 22%;">
+						<ul>
+							<h6 class="footer-title-29">Contact</h6>
+							<li>Address: Ketapang, Kalimantan Barat</li>
+							<li>Phone: +62 81234567890</li>
+							<li>Email: discoverketapang@gmail.com</li>
+							<li>Maps: Ketapang, Kalimantan Barat</li>
+						</ul>
+					</div>
+				</div> <br>
+				<div class=" bottom-copies">
+					<p class="copy-footer-29" style="text-align: center; color: white;">© 2023 Discover Ketapang</p>
+				</div>
+	</section>
+
+
+	<!-- move top -->
+	<button onclick="topFunction()" id="movetop" title="Go to top">
+		<span class="fa fa-chevron-up"></span>
+	</button>
+	<script>
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("movetop").style.display = "block";
+			} else {
+				document.getElementById("movetop").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<!-- /move top -->
+
+</body>
+
+</html>

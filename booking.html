@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Discover Ketapang</title>
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        max-width: 1000px;
+        margin: 2vh;
+    }
+
+    .card-top {
+        padding: 0.7rem 5rem;
+    }
+
+    .card-top a {
+        float: left;
+        margin-top: 0.7rem;
+    }
+
+    #logo {
+        font-family: 'Dancing Script';
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    .card-body {
+        padding: 0 5rem 5rem 5rem;
+        background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media(max-width:768px) {
+        .card-body {
+            padding: 0 1rem 1rem 1rem;
+            background-image: url("https://i.imgur.com/4bg1e6u.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-top {
+            padding: 0.7rem 1rem;
+        }
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .upper {
+        padding: 1rem 0;
+        justify-content: space-evenly;
+    }
+
+    #three {
+        border-radius: 1rem;
+        width: 22px;
+        height: 22px;
+        margin-right: 3px;
+        border: 1px solid blue;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #payment {
+        margin: 0;
+        color: blue;
+    }
+
+    .icons {
+        margin-left: auto;
+    }
+
+    form span {
+        color: rgb(179, 179, 179);
+    }
+
+    form {
+        padding: 2vh 0;
+    }
+
+    input {
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        padding: 1vh;
+        margin-bottom: 4vh;
+        outline: none;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .left {
+        background-color: #ffffff;
+        padding: 2vh;
+    }
+
+    .left img {
+        width: 2rem;
+    }
+
+    .left .col-4 {
+        padding-left: 0;
+    }
+
+    .right .item {
+        padding: 0.3rem 0;
+    }
+
+    .right {
+        background-color: #ffffff;
+        padding: 2vh;
+    }
+
+    .col-8 {
+        padding: 0 1vh;
+    }
+
+    .lower {
+        line-height: 2;
+    }
+
+    .btn {
+        background-color: #0D6EFD;
+        border-color: #0D6EFD;
+        color: white;
+        width: 100%;
+        font-size: 0.7rem;
+        margin: 4vh 0 1.5vh 0;
+        padding: 1.5vh;
+        border-radius: 0;
+    }
+
+    .btn:focus {
+        box-shadow: none;
+        outline: none;
+        box-shadow: none;
+        color: white;
+        -webkit-box-shadow: none;
+        transition: none;
+    }
+
+    .btn:hover {
+        color: white;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    input[type=checkbox] {
+        width: unset;
+        margin-bottom: unset;
+    }
+
+    #cvv {
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.541)), url("https://img.icons8.com/material-outlined/24/000000/help.png");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: center;
+    }
+</style>
+
+<body id="home">
+    <section class=" header-4 header-sticky">
+        <!--header-->
+        <header id="site-header" class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                    <a class="navbar-brand" href="#index.html">
+                        <img src="assets/images/LogoRevLight.png" alt="Your logo" title="Your logo"
+                            style="width:100px;" />
+                    </a>
+                    <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-bottom: auto;">
+                        <ul class="navbar-nav ml-lg-5">
+                            <li class="nav-item @@home__active">
+                                <a class="nav-link" href="index-login.html">Home</span></a>
+                            </li>
+                            <li class="nav-item @@about__active">
+                                <a class="nav-link" href="about-login.html">About Us</a>
+                            </li>
+                            <li class="nav-item @@services__active">
+                                <a class="nav-link" href="travel-login.html">Travel Packages</a>
+                            </li>
+                            <li class="nav-item @@services__active">
+                                <a class="nav-link" href="history.html">History</a>
+                            </li>
+                            <li class="nav-item @@contact__active">
+                                <a class="nav-link" href="contact-login.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- user -->
+                    <div>
+
+                        <div class="dropdown custom-dropdown">
+
+                            <a href data-toggle="dropdown" class="align-items-center dropdown-link "
+                                aria-haspopup="true" aria-expanded="false" data-offset="-70, 20"
+                                style="font-size: medium; color: rgb(255, 255, 255); margin-bottom: auto;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                                </svg>Ahmad
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html"> <span
+                                        class="icon icon-dashboard"></span>My Profile</a>
+                                <hr>
+                                <a class="dropdown-item" href="index.html"><span
+                                        class="icon icon-mail_outline"></span>Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+        <!--/header-->
+    </section>
+    <script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+    <!--bootstrap working-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--bootstrap working//-->
+    <!--/MENU-JS-->
+    <script>
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+    <!--theme switcher dark and light mode script-->
+    <script>
+        const bodyElement = document.querySelector('body');
+        const themeToggle = document.querySelector('#themeToggle');
+        const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(
+            darkModeMql);
+
+        if (currentTheme) {
+            bodyElement.classList.add(currentTheme);
+
+            if (currentTheme === 'dark') {
+                themeToggle.checked = true;
+            }
+        }
+
+        function userPreference(e) {
+            if (e.matches) {
+                bodyElement.classList.add("dark");
+                return "dark"
+            } else {
+                bodyElement.classList.remove("dark");
+                return ""
+            }
+        }
+
+        darkModeMql.addListener(userPreference);
+
+        function themeSwitcher(e) {
+            if (e.target.checked) {
+                bodyElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                bodyElement.classList.remove('dark');
+                localStorage.setItem('theme', '');
+            }
+        }
+
+        themeToggle.addEventListener('change', themeSwitcher);
+    </script>
+    <!--theme switcher dark and light mode script//-->
+
+
+
+    <!-- breadcrumbs -->
+    <section class="inner-banner-main">
+        <br>
+        <br>
+        <br><br>
+        <div class="card">
+            <div class="card-top border-bottom text-left">
+                <span id="logo">Passengers Details Page</span>
+
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="left border">
+                            <div class="row">
+                                <span class="header">Passengers 1</span>
+
+                            </div>
+                            <hr>
+                            <form>
+                                <label for="nameDestination">Full Name</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname">
+
+                                <label for="nameDestination">Nationaly</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your nationaly">
+
+
+                                <label for="nameDestination">Phone Number</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname">
+
+                            </form>
+
+                            <div class="row">
+                                <span class="header">Passengers 2</span>
+
+                            </div>
+                            <hr>
+                            <form>
+                                <label for="nameDestination">Full Name</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname">
+
+                                <label for="nameDestination">Nationaly</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your nationaly">
+
+
+                                <label for="nameDestination">Phone Number</label>
+                                <input type="text" class="form-control" style="background-color: white; color: black;"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname">
+
+                            </form>
+                            <a href="/DiscoverKetapang/payment.html" button class="btn" type="submit"
+                                style="text-align: center; font-size: 17px; border-radius: 5px;">Submit</a></button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="right border">
+                            <div class="header">Your Destination</div>
+                            <hr>
+                            <div class="row item">
+                                <div class="col-auto align-self-center"><img class="img-fluid"
+                                        src="./assets/images/celincing.jpg" width="auto" height="auto"></div>
+                                <div class="col-10"><br>
+                                    <div class="row" style="font-size: 15px;"><b> Cempaka Jaya Tourism Village</b></div>
+
+                                    <div class="row" style="font-size: 15px;"> Boat </div>
+                                    <div class="row" style="font-size: 13px;"> Tuesday, 3 October 2023 | 10:12 AM</div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br><br><br>
+        </div>
+
+        <hr>
+        <div class=" footer text-center" style="font-size: large;">
+            <p class="text-center" style="color: black;">© 2023 Discover Ketapang. All Rights Reserved. </p>
+        </div> <br>
+    </section>
+
+
+
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-chevron-up"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+
+</body>
+
+</html>

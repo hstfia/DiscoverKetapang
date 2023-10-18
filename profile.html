@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Discover Ketapang</title>
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body id="home">
+	<section class=" header-4 header-sticky">
+		<!--header-->
+		<header id="site-header" class="fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark stroke">
+					<a class="navbar-brand" href="#index.html">
+						<img src="assets/images/LogoRevLight.png" alt="Your logo" title="Your logo"
+							style="width:100px;" />
+					</a>
+					<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+						data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-bottom: auto;">
+						<ul class="navbar-nav ml-lg-5">
+							<li class="nav-item active">
+								<a class="nav-link" href="index-login.html">Home <span
+										class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@about__active">
+								<a class="nav-link" href="about-login.html">About Us</a>
+							</li>
+							<li class="nav-item @@services__active">
+								<a class="nav-link" href="travel-login.html">Travel Packages</a>
+							</li>
+							<li class="nav-item @@services__active">
+								<a class="nav-link" href="history.html">History</a>
+							</li>
+							<li class="nav-item @@contact__active">
+								<a class="nav-link" href="contact-login.html">Contact</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<!-- user -->
+					<div>
+
+						<div class="dropdown custom-dropdown">
+
+							<a href data-toggle="dropdown" class="align-items-center dropdown-link "
+								aria-haspopup="true" aria-expanded="false" data-offset="-70, 20"
+								style="font-size: medium; color: rgb(255, 255, 255); margin-bottom: auto;">
+								<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor"
+									class="bi bi-person" viewBox="0 0 16 16">
+									<path
+										d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+								</svg>Ahmad
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="profile.html"> <span
+										class="icon icon-dashboard"></span>My Profile</a>
+								<hr>
+								<a class="dropdown-item" href="index.html"><span
+										class="icon icon-mail_outline"></span>Log Out</a>
+							</div>
+						</div>
+					</div>
+
+				</nav>
+
+			</div>
+		</header>
+		<!--/header-->
+	</section>
+	<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+	<!--bootstrap working-->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--bootstrap working//-->
+	<!--/MENU-JS-->
+	<script>
+		//Main navigation Active Class Add Remove
+		$(".navbar-toggler").on("click", function () {
+			$("header").toggleClass("active");
+		});
+		$(document).on("ready", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+			$(window).on("resize", function () {
+				if ($(window).width() > 991) {
+					$("header").removeClass("active");
+				}
+			});
+		});
+	</script>
+	<!--//MENU-JS-->
+	<!-- disable body scroll which navbar is in active -->
+	<script>
+		$(function () {
+			$('.navbar-toggler').click(function () {
+				$('body').toggleClass('noscroll');
+			})
+		});
+	</script>
+	<!-- disable body scroll which navbar is in active -->
+	<!--theme switcher dark and light mode script-->
+	<script>
+		const bodyElement = document.querySelector('body');
+		const themeToggle = document.querySelector('#themeToggle');
+		const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
+
+		const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : userPreference(darkModeMql);
+
+		if (currentTheme) {
+			bodyElement.classList.add(currentTheme);
+
+			if (currentTheme === 'dark') {
+				themeToggle.checked = true;
+			}
+		}
+
+		function userPreference(e) {
+			if (e.matches) {
+				bodyElement.classList.add("dark");
+				return "dark"
+			} else {
+				bodyElement.classList.remove("dark");
+				return ""
+			}
+		}
+
+		darkModeMql.addListener(userPreference);
+
+		function themeSwitcher(e) {
+			if (e.target.checked) {
+				bodyElement.classList.add('dark');
+				localStorage.setItem('theme', 'dark');
+			} else {
+				bodyElement.classList.remove('dark');
+				localStorage.setItem('theme', '');
+			}
+		}
+
+		themeToggle.addEventListener('change', themeSwitcher);
+	</script>
+	<!--theme switcher dark and light mode script//-->
+
+
+
+	<!-- breadcrumbs -->
+	<section class="inner-banner-main">
+		<div class="about-inner contact">
+			<div class="breadcrumbs-sub">
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!-- profile -->
+	<!-- <section>
+    <div class="team-single-main editContent">
+		<div class="container-fluid text-center ">
+            <div class="text"> <br>
+                <h1>Profile</h1>
+            </div> <br>
+
+	<div class="col-md-12 col-xl-12" style="display: flex;">
+    <div class="card" style="width: 18rem; ">
+        <div class="just-two-col">
+        <div class="card-body">
+            
+        </div>
+      </div>
+      </div>
+      
+</section> -->
+
+	<section class="contact-info-main" id="profile"">
+	<div class=" col-md-12 col-lg-12 col-sm-12">
+		<div class="container">
+			<h1 class="m-5">Profile</h1>
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+
+							<div class="card-body ">
+								<ul class="list-group list-group-flush d-flex justify-center">
+									<a href="#" style='width: 100%; height: auto; max-width: 100%'
+										class="list-group-item">Setting Account</a>
+									<a href="./index.html" class="list-group-item">Log Out</a>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-8">
+					<form action="">
+						<label for=""><b>Username</b></label>
+						<input type="text" class="form-control shadow" placeholder="Ahmad">
+					</form> <br>
+					<form action="">
+						<label for=""><b>Email</b></label>
+						<input type="text" class="form-control shadow" placeholder="ahmad@gmail.con">
+					</form> <br>
+					<form action="">
+						<label for=""><b>Phone Number</b></label>
+						<input type="phoneNumber" class="form-control shadow" placeholder="+62123456789">
+					</form> <br>
+					<form action="">
+						<label for=""><b>Current Password</b></label>
+						<input type="password" class="form-control shadow" placeholder="Current Password">
+					</form> <br>
+					<form action="">
+						<label for="Password"><b>New Password</b></label>
+						<input type="text" class="form-control shadow" placeholder="New Password">
+					</form> <br>
+					<a href="index-login.html" class="btn btn-primary">Update</a>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+	<br><br><br>
+
+	<!-- footer -->
+	<section class="footer-29-main">
+		<div class="footer-29 py-5 ">
+			<div class="container">
+				<div class="grid-col-4 footer-top-29">
+					<div class="footer-list-29 footer-1"
+						style="width: 23rem; color: #ecf0f1; font-size: 19px; font-weight: 300;">
+						<h2 class="footer-title-29">Discover Ketapang</h2>
+						<p>We are a team called Discover Ketapang. The aim of this team was formed to solve problems
+							experienced by users regarding water transportation tickets for traveling</p>
+						<div class="main-social-footer-29">
+							<a href="#facebook" class="facebook"><span class="fas fa-facebook></span></a>
+						<a href=" #twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+							<a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+							<a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+							<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+						</div>
+					</div>
+					<div class="footer-list-29 footer-2 d-flex flex-row-reverse"
+						style="width: 35rem; color: #ecf0f1; font-size: 19px; font-weight: 300; margin-left: 22%;">
+						<ul>
+							<h6 class="footer-title-29">Contact</h6>
+							<li>Address: Ketapang, Kalimantan Barat</li>
+							<li>Phone: +62 81234567890</li>
+							<li>Email: discoverketapang@gmail.com</li>
+							<li>Maps: Ketapang, Kalimantan Barat</li>
+						</ul>
+					</div>
+				</div> <br>
+				<div class=" bottom-copies">
+					<p class="copy-footer-29" style="text-align: center; color: white;">© 2023 Discover Ketapang</p>
+				</div>
+	</section>
+
+	<!-- move top -->
+	<button onclick="topFunction()" id="movetop" title="Go to top">
+		<span class="fa fa-chevron-up"></span>
+	</button>
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("movetop").style.display = "block";
+			} else {
+				document.getElementById("movetop").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<!-- /move top -->
+
+</body>
+
+</html>
